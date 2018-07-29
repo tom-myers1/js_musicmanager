@@ -1,0 +1,59 @@
+// entry point
+ main page
+  has 2 options :
+    add song
+    start mix
+
+X----------------------------
+// add song
+  has 2 options :
+    fill in meta data for song
+    upload from file
+    returns confirmation or error
+
+XX----------------------------
+  // fill in meta data for song
+    has form validation
+    executes db script
+
+XX----------------------------
+  // upload from file
+    has 2 options :
+      Add
+      overwrite
+XXXX----------------------------
+    // Add
+      executes db script
+xxxx----------------------------
+    // overwrite
+      has validation
+      executes db script
+
+
+X----------------------------
+// start mix
+  has X options :
+    select song from song search
+    select song from bpm
+    select random song
+    suggest songs based on currently playing
+    returns suggested songs or error
+XX----------------------------
+  // select song from song search
+    takes input from box
+    returns suggested songs
+XX----------------------------
+  // slect song from bpm
+    opens bpm counter
+    returns suggested songs based on bpm
+XXXX----------------------------
+    // bpm counter
+      gets tapped input from user
+      returns bpm
+XX----------------------------
+  // select random song
+    returns random song
+XX---------------------------
+  // suggest song based on currently playing
+    takes input from currently playing box
+    returns suggested songs                  
